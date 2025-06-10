@@ -4,7 +4,7 @@ import "../css/category.css";
 import supplementsIcon from "../assets/supplements.png";
 import sportsIcon from "../assets/Sport.png";
 import bathIcon from "../assets/Bath.png";
-import beautyIcon from "../assets/beauty.png";
+import beautyIcon from "../assets/Beauty.png";
 import groceryIcon from "../assets/Grocery_v2.png";
 import homeIcon from "../assets/Health_v2.png";
 import babyIcon from "../assets/Baby_v2.png";
