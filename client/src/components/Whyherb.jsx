@@ -1,5 +1,7 @@
 import React from "react";
-import "../css/whyherb.css";
+import "../css/Whyherb.css"
+
+
 import icon1 from "../assets/authentic.png"; 
 import icon2 from "../assets/warehouse.png";
 import icon3 from "../assets/chat.png";
