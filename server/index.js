@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080;
 
 // ✅ CORS setup - allow frontend deployed URL or localhost for development
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://i-herb-ten.vercel.app",
   credentials: true,
 }));
 
