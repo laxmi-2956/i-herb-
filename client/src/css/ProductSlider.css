@@ -1,0 +1,148 @@
+/* Container */
+.product-slider-container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  position: relative;
+  min-height: 400px; /* Enough height so slider doesn't get pushed down */
+}
+
+.product-slider-container h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* View All Button */
+.view-all-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Slider Layout */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+/* Arrows */
+.arrow-btn {
+  background-color: #ddd;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.arrow-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.arrow-btn:hover:not(:disabled) {
+  background-color: #bbb;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  overflow: hidden; /* Hide overflow so cards slide nicely */
+}
+
+/* Product Card */
+.product-card {
+  flex: 0 0 300px; /* Fixed width for each card */
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.slider .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    /* background-color: #f3f4f6; */
+}
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Product Title */
+.title {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  height: 3rem; /* Fix height for consistent card size */
+  overflow: hidden;
+}
+
+/* Rating */
+.rating {
+  color: #ff9800;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Price */
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+/* slider-slider-cart Button (with smooth animation) */
+.slider-cart {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+}
+
+/* Show on Hover */
+.product-card:hover .slider-cart {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}

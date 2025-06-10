@@ -1,0 +1,53 @@
+.account-section {
+  padding: 20px;
+}
+.accont-container .main-content{
+    padding: 0px;
+    overflow: none;
+}
+
+.account-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.account-item .icon {
+  margin-right: 10px;
+  color: #555;
+  min-width: 20px;
+}
+
+.account-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.account-item .masked {
+  flex: 2;
+  color: #666;
+}
+
+.account-item .edit-icon {
+  cursor: pointer;
+  color: #888;
+}
+
+.delete-link {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.delete-link a {
+  color: #0076d7;
+  text-decoration: none;
+  font-size: 14px;
+}
